@@ -6,6 +6,118 @@ Author URI: https://github.com/kvillanova
 Description: Tema teste feito para a Alpina.
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-html, body {
+html,
+body {
   font-family: "Roboto", sans-serif;
+  background: #1E1E1E;
+  color: white;
+}
+
+header {
+  font-size: 1.125rem;
+  height: 80px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-backdrop-filter: blur(250px);
+          backdrop-filter: blur(250px);
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#menu-principal .active {
+  position: relative;
+  border-bottom: solid 2px white;
+}
+
+.carousel-indicators > [data-bs-target] {
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-indicators,
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+}
+
+.carousel-item__titulo {
+  line-height: 90%;
+  text-transform: uppercase;
+  font-weight: 200;
+  max-width: 600px;
+  font-size: 4rem;
+}
+.carousel-item__titulo > strong {
+  font-weight: 900;
+}
+
+.p__texto {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 500px;
+  color: #999999;
+}
+.p__texto > strong {
+  color: white;
+}
+
+.carousel-item__texto {
+  max-width: 500px;
+}
+
+.p_texto {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999999;
+}
+.p_texto > strong {
+  color: white;
+}
+
+.carousel__controles {
+  margin-top: -50px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+#solucoes .p_texto {
+  max-width: 400px;
+}
+
+.seta-link {
+  width: auto;
+  height: 20px;
+}
+
+.dropdown-menu {
+  margin-top: 30px;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  width: 228px;
+  overflow: hidden;
+}
+.dropdown-item h4, .dropdown-item p {
+  color: black;
+  white-space: normal;
+}
+.dropdown-item p {
+  font-size: 0.75rem;
+}
+.dropdown-item img {
+  width: 16px;
+  height: auto;
+}
+.dropdown-item:hover {
+  background-color: #191919;
+}
+.dropdown-item:hover h4, .dropdown-item:hover p {
+  color: white;
+}
+.dropdown-item:hover img {
+  filter: invert(100%);
 }
