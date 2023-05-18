@@ -21,11 +21,11 @@
 				</a>
 			</div>
 
-			<button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+			<button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target=".menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
 				<span class="navbar-toggler-icon text-white"></span>
 			</button>
 
-			<div class="nav collapse navbar-collapse justify-content-center justify-content-lg-around" id="menu-principal">
+			<div class="nav collapse navbar-collapse justify-content-center justify-content-lg-around menu-principal">
 
 				<ul class="nav mb-2 justify-content-center mb-lg-0">
 					<li class="nav-item">
@@ -63,17 +63,19 @@
 					</li>
 				</ul>
 
-				<div class="d-flex flex-wrap justify-content-end">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 me-32">
+				</div>
+
+				<div class="nav collapse navbar-collapse menu-principal justify-content-end align-items-center flex-grow-0">
+					<ul class="navbar-nav">
 						<li class="nav-item dropdown">
 							<a class="nav-link link-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="" aria-expanded="false">
 								PT
 							</a>
 						</li>
 					</ul>
-					<button class="btn btn-sm btn-outline-light px-3">Solicitar proposta</button>
+					<button class="btn btn-outline-light px-3">Solicitar proposta</button>
 				</div>
 
-			</div>
+			
 		</nav>
 	</header>
