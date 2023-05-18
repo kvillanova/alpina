@@ -12,3 +12,68 @@
 
 <body>
 	<?php wp_body_open(); ?>
+	<header class="sticky-top">
+		<nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between py-3 mb-4 navbar navbar-dark navbar-expand-lg px-5">
+
+			<div class="mb-2 mb-lg-0">
+				<a class="navbar-brand col-lg-auto" href="#">
+					<img src="<?= get_stylesheet_directory_uri(); ?>/assets/svg/logo-branco-alpina.svg" alt="Alpina">
+				</a>
+			</div>
+
+			<button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+				<span class="navbar-toggler-icon text-white"></span>
+			</button>
+
+			<div class="nav collapse navbar-collapse justify-content-center justify-content-lg-around" id="menu-principal">
+
+				<ul class="nav mb-2 justify-content-center mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link text-white active" aria-current="page" href="#">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link-secondary" href="#">Sobre</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link link-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Soluções
+						</a>
+						<ul class="dropdown-menu py-0">
+							<li class="dropdown-item">
+								<a class="d-flex flex-wrap flex-column nav-link text-secondary" href="#">
+									<h4><img class="pe-1" src="<?= get_stylesheet_directory_uri(); ?>/assets/svg/tech.svg" alt="Tecnologia">Tecnologia</h4>
+									<p>Criação de sites, one page, Implantação de E-commerce e suporte dedicado</p>
+								</a>
+							</li>
+							<li class="dropdown-item">
+								<a class="d-flex flex-wrap flex-column nav-link text-secondary" href="#">
+									<h4><img class="pe-1" src="<?= get_stylesheet_directory_uri(); ?>/assets/svg/mkt.svg" alt="Tecnologia">Marketing Digital</h4>
+									<p>Criação de sites, one page,
+										Implantação de E-commerce e
+										suporte dedicado</p>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link-secondary" href="#">Cases</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link-secondary" href="">Contato</a>
+					</li>
+				</ul>
+
+				<div class="d-flex flex-wrap justify-content-end">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 me-32">
+						<li class="nav-item dropdown">
+							<a class="nav-link link-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+								PT
+							</a>
+						</li>
+					</ul>
+					<button class="btn btn-sm btn-outline-light px-3">Solicitar proposta</button>
+				</div>
+
+			</div>
+		</nav>
+	</header>
