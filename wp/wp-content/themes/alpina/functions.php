@@ -1,6 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
 add_action( 'init', 'register_post_types' );
+add_action('wp_enqueue_scripts', 'send_scripts');
 function register_post_types() {
 	$labels = [
 		'name'                     => esc_html__( 'Destaques', 'your-textdomain' ),
@@ -74,5 +75,9 @@ function register_meta_boxes( $meta_boxes ) {
     ];
 
     return $meta_boxes;
+}
+
+function send_scripts() {
+	wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', ['jquery'], false, true);
 }
 ?>
