@@ -9,7 +9,7 @@ Description: Tema teste feito para a Alpina.
 html,
 body {
   font-family: "Roboto", sans-serif;
-  background: #1E1E1E;
+  background: black;
   color: white;
 }
 
@@ -126,6 +126,9 @@ h1 {
   max-width: 1200px;
 }
 
+.solucao-home {
+  background: #191919;
+}
 .solucao-home:hover {
   background: white;
   color: black;
@@ -135,6 +138,7 @@ h1 {
 }
 .solucao-home:hover .icone-link {
   display: flex;
+  background: black;
 }
 .solucao-home h4 {
   font-size: 2rem;
@@ -149,6 +153,22 @@ h1 {
   height: 74px;
   background: black;
   display: none;
+}
+@media screen and (max-width: 991px) {
+  .solucao-home .icone-link {
+    display: flex;
+    background: none;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .solucao-home .icone-link {
+    display: none;
+    background: black;
+    top: 0;
+    right: 0;
+  }
 }
 .solucao-home .icone-link img {
   width: 16px;
