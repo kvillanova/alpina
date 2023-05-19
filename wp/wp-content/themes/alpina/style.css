@@ -23,12 +23,14 @@ header {
   background: rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-header.header-mobile {
-  background: white;
-  height: auto;
-}
-header.header-mobile .navbar-brand img {
-  filter: invert(100%);
+@media screen and (max-width: 991px) {
+  header.header-mobile {
+    background: white;
+    height: auto;
+  }
+  header.header-mobile .navbar-brand img {
+    filter: invert(100%);
+  }
 }
 
 #menu-principal .active {

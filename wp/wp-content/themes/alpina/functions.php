@@ -173,5 +173,6 @@ function register_meta_boxes( $meta_boxes ) {
 
 function send_scripts() {
 	wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', ['jquery'], false, true);
+	wp_enqueue_script('slider', get_template_directory_uri() . '/assets/js/slider.js', ['jquery'], false, true);
 }
 ?>
