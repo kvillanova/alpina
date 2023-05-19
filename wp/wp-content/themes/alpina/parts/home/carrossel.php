@@ -13,7 +13,7 @@ if ($query->have_posts()) :
                 ?>
                     <div class="carousel-item px-0<?= $query->current_post == 0 ? ' active' : ''; ?>">
                         <div class="carousel-item__content d-lg-flex flex-wrap justify-content-between align-items-center">
-                            <div class="d-flex flex-column ps-5 px-5 py-3 px-lg-0 py-lg-0 ms-5 me-auto align-items-start col-lg-4">
+                            <div class="d-flex flex-column py-3 px-lg-0 py-lg-0 ms-lg-5 mx-auto align-items-start col-lg-4">
                                 <h2 class="carousel-item__titulo">
                                     <?= strip_tags(get_post_meta($post->ID, 'titulo_do_destaque', true), ['b', 'strong', 'i', 'em']); ?>
                                 </h2>
