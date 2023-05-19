@@ -121,3 +121,36 @@ h1 {
 .dropdown-item:hover img {
   filter: invert(100%);
 }
+
+.content {
+  max-width: 1200px;
+}
+
+.solucao-home:hover {
+  background: white;
+  color: black;
+}
+.solucao-home:hover .icone {
+  filter: none;
+}
+.solucao-home:hover .icone-link {
+  display: flex;
+}
+.solucao-home h4 {
+  font-size: 2rem;
+}
+.solucao-home .icone {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+}
+.solucao-home .icone-link {
+  width: 74px;
+  height: 74px;
+  background: black;
+  display: none;
+}
+.solucao-home .icone-link img {
+  width: 16px;
+  height: auto;
+}

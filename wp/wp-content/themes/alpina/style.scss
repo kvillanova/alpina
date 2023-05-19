@@ -134,3 +134,39 @@ h1 {
         }
     }
 }
+
+.content {
+    max-width: 1200px;
+}
+
+.solucao-home {
+    &:hover {
+        background: white;
+        color:black;
+        .icone {
+            filter:none;
+        }
+        .icone-link {
+            display: flex;
+        }
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    .icone {
+        filter:invert(100%);
+        width: 32px;
+        height: auto;
+    }
+    .icone-link {
+        width: 74px;
+        height: 74px;
+        background: black;
+        display: none;
+        img {
+            width: 16px;
+            height: auto;
+        }
+    }
+     
+}

@@ -37,6 +37,41 @@ function register_post_types() {
 	];
 
 	register_post_type( 'destaques', $args );
+
+	$labels = [
+		'name'                     => esc_html__( 'Soluções', 'your-textdomain' ),
+		'singular_name'            => esc_html__( 'Solução', 'your-textdomain' ),
+		'add_new'                  => esc_html__( 'Adicionar nova', 'your-textdomain' ),
+	];
+	$args = [
+		'label'               => esc_html__( 'Destaques', 'your-textdomain' ),
+		'labels'              => $labels,
+		'description'         => '',
+		'public'              => true,
+		'hierarchical'        => false,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'delete_with_user'    => true,
+		'has_archive'         => true,
+		'rest_base'           => '',
+		'show_in_menu'        => true,
+		'menu_position'       => '',
+		'menu_icon'           => 'dashicons-businesswoman',
+		'capability_type'     => 'post',
+		'supports'            => ['title','thumbnail'],
+		'taxonomies'          => [],
+		'rewrite'             => [
+			'with_front' => false,
+		],
+	];
+
+	register_post_type( 'solucoes', $args );
 }
 
 
@@ -70,6 +105,30 @@ function register_meta_boxes( $meta_boxes ) {
                 'type' => 'text',
                 'name' => esc_html__( 'Link do Botão', 'online-generator' ),
                 'id'   => $prefix . 'link_do_botao',
+            ],
+        ],
+    ];
+
+	$meta_boxes[] = [
+        'title'   => esc_html__( 'Untitled Field Group', 'online-generator' ),
+        'id'      => 'untitled',
+        'context' => 'normal',
+		'post_types' => ['solucoes'],
+        'fields'  => [
+            [
+                'type'  => 'text',
+                'name'  => esc_html__( 'Ítens', 'online-generator' ),
+                'id'    => $prefix . 'itens',
+                'clone' => true,
+            ],
+            [
+                'type'    => 'select_advanced',
+                'name'    => esc_html__( 'Ícone', 'online-generator' ),
+                'id'      => $prefix . 'icone',
+                'options' => [
+                    'tech' => esc_html__( 'tech', 'online-generator' ),
+                    'mkt'  => esc_html__( 'mkt', 'online-generator' ),
+                ],
             ],
         ],
     ];

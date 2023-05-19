@@ -4,7 +4,7 @@ $query = new WP_Query([
 ]);
 if ($query->have_posts()) :
 ?>
-    <div class="fluid-row">
+    <div class="container">
         <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <?php
