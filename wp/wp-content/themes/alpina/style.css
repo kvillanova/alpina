@@ -23,6 +23,13 @@ header {
   background: rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+header.header-mobile {
+  background: white;
+  height: auto;
+}
+header.header-mobile .navbar-brand img {
+  filter: invert(100%);
+}
 
 #menu-principal .active {
   position: relative;
@@ -46,6 +53,11 @@ header {
   font-weight: 200;
   max-width: 600px;
   font-size: 4rem;
+}
+@media screen and (max-width: 767px) {
+  .carousel-item__titulo {
+    font-size: 2.5rem;
+  }
 }
 .carousel-item__titulo > strong {
   font-weight: 900;

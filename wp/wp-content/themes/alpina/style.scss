@@ -23,6 +23,13 @@ header {
     backdrop-filter: blur(250px);
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &.header-mobile {
+        background:white;
+        height: auto;
+        .navbar-brand img {
+            filter: invert(100%);
+        }
+    }
 }
 
 #menu-principal {
@@ -52,6 +59,9 @@ header {
     font-weight: 200;
     max-width: 600px;
     font-size: 4rem;
+    @media screen and (max-width:767px) {
+        font-size: 2.5rem;
+    }
 
     &>strong {
         font-weight: 900;

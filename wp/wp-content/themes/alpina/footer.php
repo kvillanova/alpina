@@ -4,10 +4,10 @@
         <div class="d-flex flex-column flex-lg-row ms-5 top-social justify-content-between align-items-center">
             <img src="<?= get_template_directory_uri(); ?>/assets/svg/logo-branco-alpina.svg" alt="Alpina">
             <div class="social d-flex flex-row justify-content-around py-3 py-lg-0">
-                <img class="mx-3" src="<?= get_template_directory_uri(); ?>/assets/svg/social/instagram.svg" alt="Instagram">
-                <img class="mx-3" src="<?= get_template_directory_uri(); ?>/assets/svg/social/linkedin.svg" alt="Instagram">
-                <img class="mx-3" src="<?= get_template_directory_uri(); ?>/assets/svg/social/whatsapp.svg" alt="WhatsApp">
-                <img class="mx-3" src="<?= get_template_directory_uri(); ?>/assets/svg/social/youtube.svg" alt="YouTube">
+                <i class="me-3 bi bi-instagram"></i>
+                <i class="mx-3 bi bi-linkedin"></i>
+                <i class="mx-3 bi bi-whatsapp"></i>
+                <i class="ms-3 bi bi-youtube"></i>
             </div>
         </div>
 
