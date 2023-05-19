@@ -34,8 +34,8 @@
                     </div>
                     <div class="d-flex flex-column flex-grow-1">
                         <h4>Atendimento</h4>
-                        <a class="nav-link text-white" href="#">(54) 98358-4713</a>
-                        <a class="nav-link text-white" href="#">(54) 9999-9999</a>
+                        <a class="nav-link text-white" href="#"><i class="bi bi-whatsapp me-1"></i> (54) 98358-4713</a>
+                        <a class="nav-link text-white" href="#"><i class="bi bi-telephone me-1"></i> (54) 9999-9999</a>
                     </div>
                 </div>
 

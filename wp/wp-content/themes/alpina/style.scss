@@ -200,3 +200,20 @@ h1 {
     }
      
 }
+
+.selo-foto {
+    top:320px;
+    left:-100px;
+}
+
+.topico__titulo {
+    font-size:3rem;
+    text-transform: uppercase;
+    &.esquerda {
+        width: 434px;
+        background:black;
+        padding:20px;
+        top:0;
+        left:400px;
+    }
+}

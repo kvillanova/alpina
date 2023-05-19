@@ -188,3 +188,20 @@ h1 {
   width: 16px;
   height: auto;
 }
+
+.selo-foto {
+  top: 320px;
+  left: -100px;
+}
+
+.topico__titulo {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.topico__titulo.esquerda {
+  width: 434px;
+  background: black;
+  padding: 20px;
+  top: 0;
+  left: 400px;
+}

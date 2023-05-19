@@ -118,7 +118,7 @@ function register_meta_boxes( $meta_boxes ) {
     $meta_boxes[] = [
         'title'   => esc_html__( 'Metaboxes', 'online-generator' ),
         'id'         => 'untitled',
-        'post_types' => ['destaques', 'topicos'],
+        'post_types' => ['destaques'],
         'context'    => 'normal',
         'fields'     => [
             [
@@ -164,6 +164,35 @@ function register_meta_boxes( $meta_boxes ) {
                     'tech' => esc_html__( 'tech', 'online-generator' ),
                     'mkt'  => esc_html__( 'mkt', 'online-generator' ),
                 ],
+            ],
+        ],
+    ];
+
+	$meta_boxes[] = [
+        'title'   => esc_html__( 'Metaboxes', 'online-generator' ),
+        'id'         => 'untitled',
+        'post_types' => ['topicos'],
+        'context'    => 'normal',
+        'fields'     => [
+            [
+                'type' => 'wysiwyg',
+                'name' => esc_html__( 'Título do Tópico', 'online-generator' ),
+                'id'   => $prefix . 'titulo_do_topico',
+            ],
+            [
+                'type' => 'wysiwyg',
+                'name' => esc_html__( 'Texto de Parágrafo', 'online-generator' ),
+                'id'   => $prefix . 'texto_de_paragrafo',
+            ],
+            [
+                'type' => 'text',
+                'name' => esc_html__( 'Texto do Botão', 'online-generator' ),
+                'id'   => $prefix . 'texto_do_botao',
+            ],
+            [
+                'type' => 'text',
+                'name' => esc_html__( 'Link do Botão', 'online-generator' ),
+                'id'   => $prefix . 'link_do_botao',
             ],
         ],
     ];
