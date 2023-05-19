@@ -8,7 +8,6 @@ if(logos_wrapper_largura > logos_container_largura) {
 
     const moverEsquerda = setInterval(function(){
         jQuery('.logos-wrapper').css('left', '-=10');
-        console.log(parseInt(jQuery('.logos-wrapper').css('left')));
 
         if(parseInt(jQuery('.logos-wrapper').css('left')) <= -logos_wrapper_largura) {
            jQuery('.logos-wrapper').css('left', '0px');
