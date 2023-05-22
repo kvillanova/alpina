@@ -27,7 +27,7 @@
     if ($query->have_posts()) :
         $query->the_post();
     ?>
-        <div id="topico-direita" class="position-relative mx-5 d-flex flex-column flex-lg-row justify-content-center align-items-center mt-5">
+        <div id="topico-direita" class="position-relative mx-5 d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center mt-5">
             <div class="esquerda mx-5">
                 <h4 class="topico__titulo"><?= strip_tags(get_post_meta($post->ID, 'titulo_do_topico', true), ['b', 'strong', 'i', 'em']); ?></h4>
                 <p class="my-5"><?= strip_tags(get_post_meta($post->ID, 'texto_de_paragrafo', true), ['b', 'strong', 'i', 'em']); ?></p>
