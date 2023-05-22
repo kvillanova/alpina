@@ -217,3 +217,37 @@ h1 {
         left:400px;
     }
 }
+
+.form__titulo {
+    font-size:3rem;
+    text-transform: uppercase;
+}
+
+.form-holder {
+    p, span, label {
+        width: 100%;
+    }
+    input, textarea {
+        width: 100%;
+        background:none;
+        border: solid 1px white;
+        padding: 8px 16px;
+        color: white;
+    }
+    input[type=submit] {
+        background:white;
+        color:black;
+    }
+    #file-manager {
+        background: none;
+        border: solid 1px #fff;
+        color: #fff;
+        width: 100%;
+        padding: 8px 16px;
+        margin-bottom: 8px;
+        .seta {
+            width: 16px;
+            height: auto;
+        }
+    }
+}

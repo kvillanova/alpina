@@ -205,3 +205,35 @@ h1 {
   top: 0;
   left: 400px;
 }
+
+.form__titulo {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.form-holder p, .form-holder span, .form-holder label {
+  width: 100%;
+}
+.form-holder input, .form-holder textarea {
+  width: 100%;
+  background: none;
+  border: solid 1px white;
+  padding: 8px 16px;
+  color: white;
+}
+.form-holder input[type=submit] {
+  background: white;
+  color: black;
+}
+.form-holder #file-manager {
+  background: none;
+  border: solid 1px #fff;
+  color: #fff;
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+.form-holder #file-manager .seta {
+  width: 16px;
+  height: auto;
+}

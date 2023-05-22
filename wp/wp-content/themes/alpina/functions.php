@@ -203,5 +203,7 @@ function register_meta_boxes( $meta_boxes ) {
 function send_scripts() {
 	wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', ['jquery'], false, true);
 	wp_enqueue_script('slider', get_template_directory_uri() . '/assets/js/slider.js', ['jquery'], false, true);
+	wp_enqueue_script('formfile', get_template_directory_uri() . '/assets/js/form-file.js', ['jquery'], false, true);
+	wp_localize_script('formfile', 'formvars', ['seta' => get_stylesheet_directory_uri() . '/assets/svg/seta-link.svg'] );
 }
 ?>
