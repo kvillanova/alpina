@@ -1,7 +1,7 @@
 <footer class="py-5">
     <nav class="container">
 
-        <div class="d-flex flex-column flex-lg-row ms-5 top-social justify-content-between align-items-center">
+        <div class="d-flex flex-column flex-lg-row ms-5 top-social justify-content-between align-items-center pb-5">
             <img src="<?= get_template_directory_uri(); ?>/assets/svg/logo-branco-alpina.svg" alt="Alpina">
             <div class="social d-flex flex-row justify-content-around py-3 py-lg-0">
                 <i class="me-3 bi bi-instagram"></i>
@@ -12,8 +12,8 @@
         </div>
 
         <div class="d-flex flex-column flex-lg-row justify-content-between px-5 py-5 row">
-            <div class="d-flex flex-row justify-content-between">
-                
+            <div class="d-flex flex-row justify-content-between col-8">
+
                 <div class="d-flex flex-column col-2 flex-grow-1">
                     <a class="nav-link text-white" href="#">Início</a>
                     <a class="nav-link text-white" href="#">Sobre</a>
@@ -25,7 +25,7 @@
                     <a class="nav-link text-white" href="#">Contato</a>
                 </div>
 
-                <div class="d-flex flex-column flex-lg-row col-3 flex-grow-1 justify-content-between">
+                <div class="d-flex flex-column flex-lg-row col-5 flex-grow-1 justify-content-between">
                     <div class="d-flex flex-column flex-grow-1">
                         <a class="nav-link text-white" href="#">Suporte</a>
                         <a class="nav-link text-white" href="#">Chamados</a>
@@ -40,7 +40,16 @@
                 </div>
 
             </div>
-
+            <div class="d-flex flex-column col-3 flex-grow-1 flex-shrink-1">
+                <h4>ALP NEWS</h4>
+                <p>Assine nossa newsletter e receba insights sobre Tecnologia, Marketing e Negócios</p>
+                <div class="form-holder">
+                    <?php
+                    $form = do_shortcode('[contact-form-7 id="28" title="Formulário pequeno"]');
+                    echo $form;
+                    ?>
+                </div>
+            </div>
 
 
         </div>
